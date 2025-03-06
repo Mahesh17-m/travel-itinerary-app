@@ -1,0 +1,206 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f4ff, #e6f0ff);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  header p {
+    margin: 10px 0 0;
+    font-size: 1.2rem;
+  }
+  
+  main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Input Form */
+  #input-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  #input-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  #travel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #6a11cb;
+    outline: none;
+  }
+  
+  #travel-form button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #travel-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Output Section */
+  #output-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    animation: fadeIn 1s ease-in-out;
+    display: none; /* Hidden by default */
+  }
+  
+  #output-section h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  #itinerary-display {
+    margin-top: 20px;
+  }
+  
+  .day {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .day:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .day h3 {
+    margin: 0 0 10px;
+    font-size: 1.4rem;
+    color: #6a11cb;
+  }
+  
+  .day ul {
+    margin: 0;
+    padding-left: 20px;
+  }
+  
+  .day ul li {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  #export-btn {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  #export-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    margin-top: auto;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
