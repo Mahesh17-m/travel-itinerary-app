@@ -53,4 +53,4 @@
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com//travel-itinerary-app.git
+   git clone https://github.com/Mahesh17-m/travel-itinerary-app
